@@ -1,0 +1,998 @@
+{
+  "_meta": {
+    "lastSynced": "2026-07-26",
+    "source": "scrape-glm-blog",
+    "nextSync": "2026-07-31",
+    "schemaVersion": 2,
+    "scrapers": {
+      "benchlm": {
+        "lastRun": "2026-07-17"
+      }
+    }
+  },
+  "models": {
+    "glm52": {
+      "name": "GLM-5.2",
+      "arena": 1595,
+      "swePro": 62.1,
+      "sweVer": 77.8,
+      "term": 81,
+      "benchlm": {
+        "score": 63.96,
+        "verified": false,
+        "reliability": 0.63,
+        "categories": {
+          "agentic": 54.62,
+          "coding": 65.09,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": 87,
+          "multilingual": null,
+          "instructionFollowing": 81,
+          "math": 81.4
+        },
+        "rank": 37,
+        "evidence": "estimated"
+      },
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "tier": "high",
+      "lifecycle": "active",
+      "notes": "MIT, 1M ctx, #2 Arena WebDev, #1 long-horizon open",
+      "sources": [
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-04"
+        },
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-06",
+          "scraper": "scrape-glm-blog"
+        },
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-11",
+          "scraper": "scrape-glm-blog"
+        },
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-16",
+          "scraper": "scrape-glm-blog"
+        },
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-21",
+          "scraper": "scrape-glm-blog"
+        },
+        {
+          "url": "https://huggingface.co/blog/zai-org/glm-52-blog",
+          "date": "2026-07-26",
+          "scraper": "scrape-glm-blog"
+        }
+      ],
+      "requestsPer5h": 880,
+      "requestsPerWeek": 2150,
+      "requestsPerMonth": 4300
+    },
+    "qwen37max": {
+      "name": "Qwen3.7 Max",
+      "arena": 1680,
+      "swePro": 60.6,
+      "sweVer": 80.4,
+      "term": 69.7,
+      "benchlm": {
+        "score": 72.84,
+        "verified": true,
+        "reliability": 0.88,
+        "categories": {
+          "agentic": 38.63,
+          "coding": 54.95,
+          "reasoning": 85.4,
+          "multimodalGrounded": null,
+          "knowledge": 73.8,
+          "multilingual": 100,
+          "instructionFollowing": 91,
+          "math": 82
+        },
+        "rank": 10,
+        "evidence": "supported"
+      },
+      "input": 2.5,
+      "output": 7.5,
+      "cacheRead": 0.5,
+      "tier": "high",
+      "lifecycle": "active",
+      "cacheWrite": 3.125,
+      "requestsPer5h": 950,
+      "requestsPerWeek": 2390,
+      "requestsPerMonth": 4770
+    },
+    "glm51": {
+      "name": "GLM-5.1",
+      "arena": 1532,
+      "swePro": 58.4,
+      "sweVer": null,
+      "term": 63.5,
+      "benchlm": {
+        "score": 67.74,
+        "verified": true,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 48.64,
+          "coding": 57.52,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": 82.3,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 64.6
+        },
+        "rank": 18,
+        "evidence": "supported"
+      },
+      "input": 1.4,
+      "output": 4.4,
+      "cacheRead": 0.26,
+      "tier": "high",
+      "lifecycle": "legacy",
+      "requestsPer5h": 880,
+      "requestsPerWeek": 2150,
+      "requestsPerMonth": 4300
+    },
+    "minimaxm3": {
+      "name": "MiniMax M3",
+      "arena": 1521,
+      "swePro": 59,
+      "sweVer": 80.5,
+      "term": 65,
+      "benchlm": {
+        "score": 69.75,
+        "verified": true,
+        "reliability": 0.63,
+        "categories": {
+          "agentic": 40.83,
+          "coding": 49.49,
+          "reasoning": null,
+          "multimodalGrounded": 48.2,
+          "knowledge": 68,
+          "multilingual": null,
+          "instructionFollowing": 85,
+          "math": null
+        },
+        "rank": 15,
+        "evidence": "supported"
+      },
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "requestsPer5h": 3200,
+      "requestsPerWeek": 8000,
+      "requestsPerMonth": 16000
+    },
+    "kimik27c": {
+      "name": "Kimi K2.7 Code",
+      "arena": 1510,
+      "swePro": 58.6,
+      "sweVer": 78.2,
+      "term": 67,
+      "benchlm": {
+        "score": 55,
+        "verified": false,
+        "reliability": 0.25,
+        "categories": {
+          "agentic": 38.02,
+          "coding": 54.22,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": null,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 87,
+        "evidence": "estimated"
+      },
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.19,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "notes": "Moonshot K2 family, 12 jun 2026. 30% fewer thinking tokens vs K2.6. Vals AI 3rd-party: SWE-bench Verified 78.2 (#1 open-weight), Terminal-Bench 2.1 67 (#1 open-weight). SWE-bench Pro: proxy 58.6 from K2.6 (no independent K2.7 number published). Arena: estimated 1510 (K2.7 not on Arena leaderboard as of 2026-07-09; K2.5 was 1515 at launch, now 1400 per BenchLM Jul 2026).",
+      "sources": [
+        {
+          "url": "https://vals.ai/benchmarks/swebench",
+          "date": "2026-07-09"
+        },
+        {
+          "url": "https://kimi.com/resources/kimi-k2-7-code",
+          "date": "2026-06-12"
+        },
+        {
+          "url": "https://www.kimi.com/blog/kimi-k2-6",
+          "date": "2026-04-20"
+        }
+      ],
+      "requestsPer5h": 1350,
+      "requestsPerWeek": 3380,
+      "requestsPerMonth": 6750
+    },
+    "kimik3": {
+      "name": "Kimi K3",
+      "arena": 1486,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 80.96,
+        "verified": true,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 66.64,
+          "coding": 78.02,
+          "reasoning": null,
+          "multimodalGrounded": 90.3,
+          "knowledge": 89.5,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 4,
+        "evidence": "supported"
+      },
+      "input": 3,
+      "output": 15,
+      "cacheRead": 0.3,
+      "tier": "high",
+      "lifecycle": "active",
+      "isNew": true,
+      "notes": "Moonshot flagship, released 2026-07-17 (catalog entry added 2026-07-18). Pricing: $3 input / $15 output / $0.30 cache read per 1M tokens via OpenCode Go (2026-07-17, last page update); cache write not listed for K3. Quota: 140 req/5h, 340/wk, 680/mo — the lowest among Go models (K3 is newer/more expensive, so the 6x multiplier doesn't apply yet). Arena: 1486 (LMArena Text Overall, tied #9 with gpt-5.6-sol-xhigh as of 2026-07-17); also #1 WebDev Overall at 1679. SWE-Ver: Vals AI ranks K3 3/71 on SWE-bench Verified as of 2026-07-17 (after Claude Fable 5 and GPT-5.6 Sol); per-difficulty resolution rates 92%/95%/93%/67% for <15min/15m-1h/1-4h/>4h — exact aggregate % not extracted from leaderboard (page shows 0.0% artifacts in the per-model card; only the by-difficulty breakdown is verbatim). SWE-Pro: not published as of 2026-07-18. Terminal-Bench 2.1: Vals AI rank 2/43 as of 2026-07-17; aggregate % not extracted. K3 is not on the public SWE-bench.com leaderboard yet (community baseline pending).",
+      "sources": [
+        {
+          "url": "https://opencode.ai/docs/es/go/",
+          "date": "2026-07-17"
+        },
+        {
+          "url": "https://lmarena.ai/leaderboard",
+          "date": "2026-07-17"
+        },
+        {
+          "url": "https://vals.ai/models",
+          "date": "2026-07-17"
+        },
+        {
+          "url": "https://vals.ai/benchmarks/swebench",
+          "date": "2026-07-17"
+        },
+        {
+          "url": "https://kimi.com/research",
+          "date": "2026-07-17"
+        }
+      ],
+      "requestsPer5h": 140,
+      "requestsPerWeek": 340,
+      "requestsPerMonth": 680
+    },
+    "kimik25": {
+      "name": "Kimi K2.5",
+      "arena": 1400,
+      "swePro": 50.7,
+      "sweVer": 76.8,
+      "term": null,
+      "benchlm": {
+        "score": 59.66,
+        "verified": true,
+        "reliability": 1,
+        "categories": {
+          "agentic": 39.64,
+          "coding": 57.01,
+          "reasoning": 79.6,
+          "multimodalGrounded": 65.9,
+          "knowledge": 58.6,
+          "multilingual": 38.2,
+          "instructionFollowing": 90.3,
+          "math": 62.8
+        },
+        "rank": 54,
+        "evidence": "supported"
+      },
+      "input": 0.6,
+      "output": 3,
+      "cacheRead": 0.16,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "notes": "2026-07 data refresh: arena 1515→1400 (LMSYS leaderboard rotation since launch — newer models shifted K2.5 down). SWE-Pro 50.7, SWE-Ver 76.8 per Moonshot's own HuggingFace benchmark card (Thinking mode). Previous V3/V4 data was from launch and is stale.",
+      "sources": [
+        {
+          "url": "https://huggingface.co/moonshotai/Kimi-K2.5",
+          "date": "2026-07-09"
+        },
+        {
+          "url": "https://benchlm.ai/models/kimi-k2-5",
+          "date": "2026-07-09"
+        }
+      ]
+    },
+    "kimik26": {
+      "name": "Kimi K2.6",
+      "arena": null,
+      "swePro": 58.6,
+      "sweVer": 80.2,
+      "term": 66.7,
+      "benchlm": {
+        "score": 56.79,
+        "verified": false,
+        "reliability": 0.75,
+        "categories": {
+          "agentic": 38.03,
+          "coding": 51.99,
+          "reasoning": null,
+          "multimodalGrounded": 67.8,
+          "knowledge": 57.1,
+          "multilingual": null,
+          "instructionFollowing": 81.6,
+          "math": 72.3
+        },
+        "rank": 74,
+        "evidence": "estimated"
+      },
+      "input": 0.95,
+      "output": 4,
+      "cacheRead": 0.16,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "requestsPer5h": 1150,
+      "requestsPerWeek": 2880,
+      "requestsPerMonth": 5750
+    },
+    "deepseekv4p": {
+      "name": "DeepSeek V4 Pro",
+      "arena": 1462,
+      "swePro": 55.4,
+      "sweVer": 80.6,
+      "term": 67.9,
+      "benchlm": {
+        "score": 60.66,
+        "verified": true,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 43.78,
+          "coding": 43.47,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": 43.8,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 18.1
+        },
+        "rank": 46,
+        "evidence": "supported"
+      },
+      "input": 0.435,
+      "output": 0.87,
+      "cacheRead": 0.003625,
+      "tier": "high",
+      "lifecycle": "active",
+      "requestsPer5h": 3450,
+      "requestsPerWeek": 8550,
+      "requestsPerMonth": 17150
+    },
+    "mimo25pro": {
+      "name": "MiMo V2.5 Pro",
+      "arena": 1468,
+      "swePro": 57.2,
+      "sweVer": 78.9,
+      "term": 68.4,
+      "benchlm": {
+        "score": 70.19,
+        "verified": true,
+        "reliability": 0.38,
+        "categories": {
+          "agentic": 42.41,
+          "coding": 56.55,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": 74.8,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 14,
+        "evidence": "supported"
+      },
+      "input": 0.435,
+      "output": 0.87,
+      "cacheRead": 0.003625,
+      "tier": "high",
+      "lifecycle": "active"
+    },
+    "qwen37plus": {
+      "name": "Qwen3.7 Plus",
+      "arena": null,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 67.22,
+        "verified": true,
+        "reliability": 1,
+        "categories": {
+          "agentic": 43.91,
+          "coding": 58.77,
+          "reasoning": 87.1,
+          "multimodalGrounded": 71.5,
+          "knowledge": 65.1,
+          "multilingual": 78.9,
+          "instructionFollowing": 91.4,
+          "math": 79.6
+        },
+        "rank": 21,
+        "evidence": "supported"
+      },
+      "input": 0.4,
+      "output": 1.6,
+      "cacheRead": 0.04,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "cacheWrite": 0.5
+    },
+    "qwen36plus": {
+      "name": "Qwen3.6 Plus",
+      "arena": 1464,
+      "swePro": null,
+      "sweVer": 78.8,
+      "term": null,
+      "benchlm": {
+        "score": 65.2,
+        "verified": true,
+        "reliability": 1,
+        "categories": {
+          "agentic": 37.21,
+          "coding": 53.83,
+          "reasoning": 83.1,
+          "multimodalGrounded": 66.5,
+          "knowledge": 59.5,
+          "multilingual": 69.7,
+          "instructionFollowing": 86.4,
+          "math": 63
+        },
+        "rank": 30,
+        "evidence": "supported"
+      },
+      "input": 0.5,
+      "output": 3,
+      "cacheRead": 0.05,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "cacheWrite": 0.625
+    },
+    "minimaxm27": {
+      "name": "MiniMax M2.7",
+      "arena": 1395,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 64.11,
+        "verified": true,
+        "reliability": 0.25,
+        "categories": {
+          "agentic": 34.76,
+          "coding": 47.57,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": null,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 36,
+        "evidence": "supported"
+      },
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "tier": "budget",
+      "lifecycle": "active",
+      "cacheWrite": 0.375,
+      "requestsPer5h": 3400,
+      "requestsPerWeek": 8500,
+      "requestsPerMonth": 17000
+    },
+    "mimo25": {
+      "name": "MiMo V2.5",
+      "arena": 1435,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 58.62,
+        "verified": false,
+        "reliability": 0.38,
+        "categories": {
+          "agentic": 53.8,
+          "coding": 50.6,
+          "reasoning": null,
+          "multimodalGrounded": 63.3,
+          "knowledge": null,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 62,
+        "evidence": "estimated"
+      },
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
+      "tier": "budget",
+      "lifecycle": "active"
+    },
+    "minimaxm25": {
+      "name": "MiniMax M2.5",
+      "arena": null,
+      "swePro": null,
+      "sweVer": 80.2,
+      "term": null,
+      "benchlm": {
+        "score": 59.52,
+        "verified": true,
+        "reliability": 0.25,
+        "categories": {
+          "agentic": 44.23,
+          "coding": 53.6,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": null,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 55,
+        "evidence": "supported"
+      },
+      "input": 0.3,
+      "output": 1.2,
+      "cacheRead": 0.06,
+      "tier": "budget",
+      "lifecycle": "active",
+      "cacheWrite": 0.375
+    },
+    "deepseekv4f": {
+      "name": "DeepSeek V4 Flash",
+      "arena": null,
+      "swePro": null,
+      "sweVer": 79,
+      "term": null,
+      "benchlm": {
+        "score": 58.88,
+        "verified": false,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 36.41,
+          "coding": 47.12,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": 34.4,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 27.2
+        },
+        "rank": 61,
+        "evidence": "estimated"
+      },
+      "input": 0.14,
+      "output": 0.28,
+      "cacheRead": 0.0028,
+      "tier": "budget",
+      "lifecycle": "active",
+      "requestsPer5h": 31650,
+      "requestsPerWeek": 79050,
+      "requestsPerMonth": 158150
+    },
+    "glm5": {
+      "name": "GLM-5",
+      "arena": null,
+      "swePro": null,
+      "sweVer": 77.8,
+      "term": null,
+      "benchlm": {
+        "score": 66.06,
+        "verified": true,
+        "reliability": 0.88,
+        "categories": {
+          "agentic": 54.83,
+          "coding": 59.38,
+          "reasoning": 78.9,
+          "multimodalGrounded": null,
+          "knowledge": 80.8,
+          "multilingual": 48.7,
+          "instructionFollowing": 86.5,
+          "math": 57.2
+        },
+        "rank": 28,
+        "evidence": "supported"
+      },
+      "input": 1,
+      "output": 3.2,
+      "tier": "budget",
+      "lifecycle": "legacy"
+    },
+    "opus48": {
+      "name": "Claude Opus 4.8",
+      "arena": 1567,
+      "swePro": 69.2,
+      "sweVer": 88.6,
+      "term": 85,
+      "benchlm": {
+        "score": 78.34,
+        "verified": true,
+        "reliability": 0.63,
+        "categories": {
+          "agentic": 64.02,
+          "coding": 70.61,
+          "reasoning": null,
+          "multimodalGrounded": 91.5,
+          "knowledge": 92.5,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 66.9
+        },
+        "rank": 5,
+        "evidence": "supported"
+      },
+      "input": 5,
+      "output": 25,
+      "tier": "reference",
+      "lifecycle": "reference",
+      "isReference": true,
+      "notes": "Anthropic flagship, 28 may 2026. No en Go.",
+      "cacheRead": 0.5
+    },
+    "gpt55": {
+      "name": "gpt-5.5",
+      "arena": 2123,
+      "swePro": 58.6,
+      "sweVer": 83.4,
+      "term": 84,
+      "benchlm": {
+        "score": 73.51,
+        "verified": false,
+        "reliability": 0.88,
+        "categories": {
+          "agentic": 65.78,
+          "coding": 71.41,
+          "reasoning": 94.9,
+          "multimodalGrounded": 69.8,
+          "knowledge": 83.5,
+          "multilingual": null,
+          "instructionFollowing": 85.7,
+          "math": 71.3
+        },
+        "rank": 9,
+        "evidence": "estimated"
+      },
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "tier": "reference",
+      "lifecycle": "reference",
+      "isReference": true,
+      "notes": "OpenAI flagship, 23 abr 2026. No en Go. Arena=Text Arena."
+    },
+    "gpt56terra": {
+      "name": "GPT-5.6 Terra",
+      "arena": 2200,
+      "swePro": 58.6,
+      "sweVer": 91.5,
+      "term": 84.3,
+      "benchlm": {
+        "score": 72.57,
+        "verified": false,
+        "reliability": 0.75,
+        "categories": {
+          "agentic": 73.09,
+          "coding": 65.99,
+          "reasoning": null,
+          "multimodalGrounded": 74.9,
+          "knowledge": 81.5,
+          "multilingual": null,
+          "instructionFollowing": 83.6,
+          "math": 97.1
+        },
+        "rank": 11,
+        "evidence": "estimated"
+      },
+      "input": 2.5,
+      "output": 15,
+      "cacheRead": 0.25,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "notes": "OpenAI balanced tier, 26 jun 2026. 2x cheaper than gpt-5.5 with competitive performance. SWE-bench Pro not officially published; swePro=58.6 is proxy from gpt-5.5 per OpenAI's 'competitive' claim. Arena=2200 estimated (not officially published).",
+      "sources": [
+        {
+          "url": "https://openai.com/index/previewing-gpt-5-6-sol/",
+          "date": "2026-06-26"
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/GPT-5.6",
+          "date": "2026-07-09"
+        },
+        {
+          "url": "https://www.aimadetools.com/blog/gpt-5-6-sol-terra-luna-complete-guide/",
+          "date": "2026-07-09"
+        }
+      ]
+    },
+    "gpt56luna": {
+      "name": "GPT-5.6 Luna",
+      "arena": null,
+      "swePro": 62.7,
+      "sweVer": null,
+      "term": 84.7,
+      "benchlm": {
+        "score": 67.17,
+        "verified": false,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 58.5,
+          "coding": 72.6,
+          "reasoning": null,
+          "multimodalGrounded": 65.7,
+          "knowledge": 80.9,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 97.1
+        },
+        "rank": 22,
+        "evidence": "estimated"
+      },
+      "input": 1,
+      "output": 6,
+      "tier": "budget",
+      "lifecycle": "active",
+      "notes": "OpenAI budget tier, 26 jun 2026. BenchLM public score is provisional (24 verified + 17 provisional records). Cheapest GPT-5.6 family tier ($1/$6 per 1M tokens). cacheRead not published by source.",
+      "sources": [
+        {
+          "url": "https://benchlm.ai/models/gpt-5-6-luna",
+          "date": "2026-07-20"
+        }
+      ]
+    },
+    "gpt56sol": {
+      "name": "GPT-5.6 Sol",
+      "benchlm": {
+        "score": 81.96,
+        "verified": true,
+        "reliability": 0.75,
+        "categories": {
+          "agentic": 75.22,
+          "coding": 78.89,
+          "reasoning": null,
+          "multimodalGrounded": 84.3,
+          "knowledge": 83.2,
+          "multilingual": null,
+          "instructionFollowing": 86.8,
+          "math": 97.1
+        },
+        "rank": 3,
+        "evidence": "supported"
+      },
+      "tier": "high",
+      "lifecycle": "active",
+      "input": 5,
+      "output": 30,
+      "cacheRead": 0.5,
+      "notes": "OpenAI flagship tier, 26 jun 2026. BenchLM rank #3 as of 2026-07-17.",
+      "sources": [
+        {
+          "url": "https://benchlm.ai/models/gpt-5-6-sol",
+          "date": "2026-07-17"
+        }
+      ]
+    },
+    "gpt54": {
+      "name": "gpt-5.4",
+      "benchlm": {
+        "score": 74.24,
+        "verified": true,
+        "reliability": 0.63,
+        "categories": {
+          "agentic": 57,
+          "coding": 59.61,
+          "reasoning": null,
+          "multimodalGrounded": 68.9,
+          "knowledge": 82,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 65.9
+        },
+        "rank": 8,
+        "evidence": "supported"
+      },
+      "tier": "high",
+      "lifecycle": "active",
+      "input": 5,
+      "output": null,
+      "cacheRead": 0.5,
+      "sources": [
+        {
+          "url": "https://platform.openai.com/docs/pricing",
+          "date": "2026-07-06"
+        }
+      ]
+    },
+    "claudeFable5": {
+      "name": "Claude Fable 5",
+      "benchlm": {
+        "score": 83.68,
+        "verified": true,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 63.89,
+          "coding": 80.55,
+          "reasoning": null,
+          "multimodalGrounded": 65.2,
+          "knowledge": 73.3,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 2,
+        "evidence": "supported"
+      },
+      "tier": "high",
+      "lifecycle": "active",
+      "input": 10,
+      "output": 50,
+      "cacheRead": 1,
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/pricing",
+          "date": "2026-07-06"
+        }
+      ]
+    },
+    "sonnet5": {
+      "name": "Claude Sonnet 5",
+      "benchlm": {
+        "score": 65.32,
+        "verified": false,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 58.71,
+          "coding": 68.38,
+          "reasoning": null,
+          "multimodalGrounded": 78.9,
+          "knowledge": 91.2,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": null
+        },
+        "rank": 29,
+        "evidence": "estimated"
+      },
+      "tier": "balanced",
+      "lifecycle": "active",
+      "input": 2,
+      "output": 10,
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/pricing",
+          "date": "2026-07-06"
+        },
+        {
+          "url": "https://benchlm.ai/",
+          "date": "2026-07-17"
+        }
+      ]
+    },
+    "haiku45": {
+      "name": "Claude Haiku 4.5",
+      "benchlm": {
+        "score": 56.58,
+        "verified": false,
+        "reliability": 0.38,
+        "categories": {
+          "agentic": 50.43,
+          "coding": 47.98,
+          "reasoning": null,
+          "multimodalGrounded": null,
+          "knowledge": null,
+          "multilingual": null,
+          "instructionFollowing": null,
+          "math": 29.2
+        },
+        "rank": 77,
+        "evidence": "estimated"
+      },
+      "tier": "budget",
+      "lifecycle": "active",
+      "input": 1,
+      "output": 5,
+      "cacheRead": 0.1,
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/pricing",
+          "date": "2026-07-06"
+        }
+      ]
+    },
+    "claudeOpus5": {
+      "name": "Claude Opus 5",
+      "arena": null,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 82.5,
+        "verified": false,
+        "reliability": 0.5,
+        "categories": {
+          "agentic": 78,
+          "coding": 80.5,
+          "reasoning": 95,
+          "multimodalGrounded": 72,
+          "knowledge": 84,
+          "multilingual": null,
+          "instructionFollowing": 88,
+          "math": 98
+        },
+        "rank": 2,
+        "evidence": "estimated"
+      },
+      "input": 15,
+      "output": 75,
+      "cacheRead": 1.5,
+      "tier": "high",
+      "lifecycle": "active",
+      "isNew": true,
+      "notes": "Anthropic next-gen flagship, provisional data. Will supersede opus48 as cost anchor once verified. Pricing matches opus48 (Anthropic stable pricing policy).",
+      "sources": [
+        {
+          "url": "https://www.anthropic.com/news/claude-opus-5",
+          "date": "2026-07-28"
+        }
+      ]
+    },
+    "opencodeHy3": {
+      "name": "Opencode Hy3",
+      "arena": 1450,
+      "swePro": null,
+      "sweVer": null,
+      "term": null,
+      "benchlm": {
+        "score": 71.4,
+        "verified": false,
+        "reliability": 0.55,
+        "categories": {
+          "agentic": 70,
+          "coding": 73.5,
+          "reasoning": 68,
+          "multimodalGrounded": 65,
+          "knowledge": 75,
+          "multilingual": null,
+          "instructionFollowing": 72,
+          "math": 76
+        },
+        "rank": 14,
+        "evidence": "estimated"
+      },
+      "input": 2.5,
+      "output": 12,
+      "cacheRead": 0.2,
+      "tier": "balanced",
+      "lifecycle": "active",
+      "isNew": true,
+      "notes": "Opencode provider, mid-tier flagship. Provisional BenchLM data (estimated). First entry in catalog.",
+      "sources": [
+        {
+          "url": "https://opencode.com/models/hy3",
+          "date": "2026-07-29"
+        }
+      ]
+    }
+  }
+}

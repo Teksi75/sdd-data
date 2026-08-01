@@ -1,0 +1,101 @@
+{
+  "_meta": {
+    "lastSynced": "2026-07-04",
+    "source": "manual-spec-definition",
+    "schemaVersion": 1,
+    "notes": "Role matrix de 18 agentes (11 SDD + 3 JD + 4 Review). minReasoning es absoluto (0-100 BenchLM); costRatio es relativo al modelo de referencia. Descriptions en rioplatense español (V5)."
+  },
+  "roles": {
+    "gentle-orchestrator": {
+      "minReasoning": 95,
+      "costRatio": 1,
+      "referenceModelId": "gpt56terra",
+      "role": "Orquestación: planificación, delegación y meta-razonamiento en el ecosistema de 18 agentes. Referencia designada: GPT-5.6 Terra (más barato que gpt-5.5, razonamiento competitivo)."
+    },
+    "sdd-init": {
+      "minReasoning": 60,
+      "costRatio": 0.1,
+      "role": "Inicializar contexto SDD: escanear openspec/, detectar agente actual, bootstrap del scratchpad."
+    },
+    "sdd-explore": {
+      "minReasoning": 70,
+      "costRatio": 0.4,
+      "role": "Exploración read-only: mapeo de codebase + material canónico; usa search + read tools."
+    },
+    "sdd-propose": {
+      "minReasoning": 85,
+      "costRatio": 0.8,
+      "role": "Redactar proposal.md: intención, scope, approach — requiere alto razonamiento para el framing arquitectónico."
+    },
+    "sdd-spec": {
+      "minReasoning": 80,
+      "costRatio": 0.6,
+      "role": "Escribir specs Given/When/Then: autoría estructurada de requirements con keywords RFC 2119."
+    },
+    "sdd-design": {
+      "minReasoning": 88,
+      "costRatio": 0.8,
+      "role": "Decisiones de arquitectura: límites de módulos, contratos, tradeoffs — alta demanda de razonamiento."
+    },
+    "sdd-tasks": {
+      "minReasoning": 65,
+      "costRatio": 0.3,
+      "role": "Descomponer el cambio en task units revisables, con dependencias y acceptance criteria."
+    },
+    "sdd-apply": {
+      "minReasoning": 75,
+      "costRatio": 1,
+      "role": "Implementación + tool calling: escribe código, corre test/build/typecheck, puede usar large context."
+    },
+    "sdd-verify": {
+      "minReasoning": 80,
+      "costRatio": 0.7,
+      "role": "Validar el cambio contra las specs y acceptance criteria; produce verification report."
+    },
+    "sdd-archive": {
+      "minReasoning": 50,
+      "costRatio": 0.05,
+      "role": "Copiar, formatear y cerrar artefactos del change en forma mecánica (el rol más barato)."
+    },
+    "sdd-onboard": {
+      "minReasoning": 60,
+      "costRatio": 0.2,
+      "role": "Onboarding inicial para un developer que adopta el workflow SDD."
+    },
+    "jd-judge-a": {
+      "minReasoning": 90,
+      "costRatio": 0.85,
+      "role": "Twin judge ciego (A): revisión adversarial contra spec + código — usa large context."
+    },
+    "jd-judge-b": {
+      "minReasoning": 90,
+      "costRatio": 0.85,
+      "role": "Twin judge ciego (B): idéntico a A pero independiente — enforce del twin judge constraint."
+    },
+    "jd-fix-agent": {
+      "minReasoning": 80,
+      "costRatio": 0.7,
+      "role": "Aplicar los fixes de los hallazgos de judgement day; ejecuta code changes en base al consensus del twin judge."
+    },
+    "review-risk": {
+      "minReasoning": 85,
+      "costRatio": 0.55,
+      "role": "Revisión de risk read-only: identifica regresiones, security concerns, edge cases."
+    },
+    "review-readability": {
+      "minReasoning": 70,
+      "costRatio": 0.4,
+      "role": "Revisión de readability read-only: style, naming, structure, claridad de intención."
+    },
+    "review-reliability": {
+      "minReasoning": 80,
+      "costRatio": 0.5,
+      "role": "Revisión de reliability read-only: error handling, idempotency, retry safety."
+    },
+    "review-resilience": {
+      "minReasoning": 78,
+      "costRatio": 0.5,
+      "role": "Revisión de resilience read-only: failure modes, fallback strategies, graceful degradation."
+    }
+  }
+}
